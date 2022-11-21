@@ -15,36 +15,29 @@
 
     <!-- CSS LINKS -->
     <link rel="stylesheet" href="assets/css/general.css">
-    <link rel="stylesheet" href="assets/">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>
 </head>
 <body>
-    <header>
-        <a href="#"><img src="/assets/img/finder-logo.svg" alt="Finder Logo" class="logo"></a>
-
-        
-            
-        <div>
-            <img src="assets/img/flag-united-states.svg" alt="USA Flag"> <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        
-        
-        <div>
+    <header class="header container">
+        <div class="dropdown-nav">
+            <a href="#" class="logo"><img src="/assets/img/finder-logo.svg" alt="Finder Logo"></a>
             <nav class="main-nav">
                 <ul class="main-nav-list">
-                    <li><a href="#explore">Explore</a><i class="fa-solid fa-chevron-down"></i></li>
-                    <li><a href="#top-cities">Top cities</a></li>
-                    <li><a href="#help">Help</a><i class="fa-solid fa-chevron-down"></i></li>
-                    <li><a href="#Blog">Blog</a></li>
+                    <li class="main-nav-list__item flag-list-item"><a href="#"><img src="assets/img/flag-united-states.svg" alt="USA Flag" class="mr-4">Eng<i class="fa-solid fa-chevron-down ml-4"></i></a></li>
+                    <li class="main-nav-list__item"><a href="#explore">Explore<i class="fa-solid fa-chevron-down ml-4"></i></a></li>
+                    <li class="main-nav-list__item"><a href="#top-cities">Top cities</a></li>
+                    <li class="main-nav-list__item"><a href="#help">Help<i class="fa-solid fa-chevron-down ml-4"></i></a></li>
+                    <li class="main-nav-list__item"><a href="#Blog">Blog</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="nav-cta">
-            <a href="#sign-in"><i class="fa-regular fa-user"></i> Sign in</a>
-            <a href="#add-property"><i class="fa-regular fa-plus"></i> Add property</a>
+        <div>
+            <a href="#sign-in" class="signin"><i class="fa-regular fa-user mr-4"></i> Sign in</a>
+            <a href="#add-property" class="btn add-property"><i class="fa-regular fa-plus mr-4"></i>Add property</a>
         </div>
 
     </header>
