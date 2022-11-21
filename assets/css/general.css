@@ -1,0 +1,95 @@
+/*
+------ 01 TYPOGRAPHY SYSTEM
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+    Default: 400
+    Bold: 700
+
+- Line heights:
+    Default: 1
+    Small: 1.3
+    Large: 1.5
+
+- Letter spacing
+
+------ 02 COLORS
+Primary: #FD5631
+Accent: #5D3CF2
+
+-Grays:
+    gray-100: #F9F8FA
+    gray-200: #F5F4F8
+    gray-300: #EFECF3
+    gray-400: #D5D2DC
+    gray-500: #BBB7C5
+    gray-600: #9691A4
+    gray-700: #666276
+    gray-800: #454056
+    gray-900: #1F1B2D
+
+success: #07C98B
+danger: #F23C49
+warning: #FDBC31
+Info: #3C76F2
+
+------ 03 SHADOWS
+Small: 0px 2px 2px -2px rgba(31, 27, 45, 0.08), 0px 4px 12px rgba(31, 27, 45, 0 08);
+default: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12);
+
+large: 0px 4px 12px -6px rgba(31, 27, 45, 0.2), 0px 8px 16px rgba(31, 27, 45, 0.16);
+
+------ 04 BORDER-RADIOUS
+8px 10px 12px
+
+- Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+:root {
+    --Primary: #FD5631;
+    --Accent: #5D3CF2;
+
+    --gray-100:#F9F8FA;
+    --gray-200:#F5F4F8;
+    --gray-300:#EFECF3;
+    --gray-400:#D5D2DC;
+    --gray-500:#BBB7C5;
+    --gray-600:#9691A4;
+    --gray-700:#666276;
+    --gray-800:#454056;
+    --gray-900:#1F1B2D;
+
+    --success: #07C98B;
+    --danger: #F23C49;
+    --warning: #FDBC31;
+    --info: #3C76F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--gray-700);
+}
+
+/*****************************************/
+/* GENERAL REUSEABLE COMPONENTS */
+/****************************************/
+
+.container {
+    max-width: 129.6rem;
+    margin: 0 auto;
+}
