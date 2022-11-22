@@ -48,7 +48,6 @@
 }
 
 /* action button:  */
-
 .signin:link,
 .signin:visited {
     text-decoration: none;
@@ -57,4 +56,21 @@
     font-weight: 700;
     color: var(--Primary);
     margin-right: 3.2rem;
+}
+
+
+/**************************/
+/* HERO */
+/**************************/
+.hero {
+    padding: 1.6rem 0 7.2rem 0;
+    position: relative;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--gray-700);
+    position: absolute;
+    width: 60rem;
 }
