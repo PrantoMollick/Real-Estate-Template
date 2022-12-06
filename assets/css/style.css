@@ -79,9 +79,8 @@
 /* HERO INPUT SECTION*/
 /**************************/
 .search-input {
-    width: 85.6rem;
+    width: 96.6rem;
     /* height: 7.8rem; */
-
     background: #fff;
     box-shadow: 0px 2px 2px -2px rgba(31, 27, 45, 0.08), 0px 4px 12px rgba(31, 27, 45, 0.08);
     border-radius: 8px;
@@ -92,6 +91,35 @@
     display: flex;
     align-items: center;
 }
+.search-input__dropdown {
+    padding-right: 4.6rem;
+    border-right: 1px solid var(--gray-300);
+}
+.dropdown-select {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 2.2rem 2.4rem;
+    background: #fff;
+    font-size: 1.6rem;
+    color: var(--gray-600);
+    cursor: pointer;
+}
+
+/* .frist-dropdown-select {
+    margin-left: 0!important;
+} */
+
+.dropdown-select svg {
+    stroke: var(--gray-300);
+}
+
+
+.dropdown-select:focus {
+    outline: none;
+}
+
 
 .range-slider__box {
     display: flex;
@@ -102,6 +130,7 @@
     display: flex;
     align-items: center;
     font-size: 1.6rem;
+    margin-left: 2rem;
 }
 
 .range-slider__box label span {
