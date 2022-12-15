@@ -1,6 +1,6 @@
 # Website Link
 
-https://prantomollick.github.io/real-estate-v1/
-[view](https://prantomollick.github.io/real-estate-v1/)
+https://prantomollick.github.io/Real-Estate-Template/
+[view](https://prantomollick.github.io/Real-Estate-Template/)
 
-# [Real Estate](https://prantomollick.github.io/real-estate-v1/)
+# [Real Estate](https://prantomollick.github.io/Real-Estate-Template/)
