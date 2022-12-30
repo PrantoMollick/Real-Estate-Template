@@ -2,24 +2,22 @@
 /* DropDown Menu */
 /****************************************/
 
-const dropdowns = document.querySelectorAll('.dropdown');
+const dropdownSelectBtns = document.querySelectorAll('.dropdown-select');
+const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+console.log(dropdownMenus);
 
-function removeShowClass(skipIndex) {
-  dropdowns.forEach((dropdown, index) => {
-    if (index === skipIndex) {
-      return;
-    }
-    dropdown.classList.remove('show');
-  });
-}
+const hideDropdownMenuHandler = (index) => {
+  if (dropdownMenus[index].classList.contains('hide-dropdown-menu')) {
+    dropdownMenus[index].classList.remove('hide-dropdown-menu');
+  } else {
+    dropdownMenus[index].classList.add('hide-dropdown-menu');
+  }
+  console.log(index);
+};
 
-function dropdownMenuToggle() {
-  dropdowns.forEach((dropdown, i) => {
-    dropdown.childNodes[1].addEventListener('click', (e) => {
-      removeShowClass(i);
-      dropdown.classList.toggle('show');
-    });
-  });
-}
-
-dropdownMenuToggle();
+dropdownSelectBtns.forEach((dropdownSelectBtn, index) => {
+  dropdownSelectBtn.addEventListener(
+    'click',
+    hideDropdownMenuHandler.bind(this, index)
+  );
+});
